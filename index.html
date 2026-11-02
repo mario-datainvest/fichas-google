@@ -93,6 +93,12 @@ section{padding-block:64px}
 .pack ul{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px}
 .pack .badge{align-self:flex-start;font-family:var(--mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;background:var(--accent);color:var(--paper);padding:3px 9px;border-radius:999px}
 .packs-foot{margin-top:20px;color:var(--muted)}
+.starter{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;background:var(--surface);border:2px dashed var(--accent);border-radius:16px;padding:26px;margin-bottom:20px}
+.starter .info{display:flex;flex-direction:column;gap:8px;max-width:62ch;min-width:0}
+.starter p{color:var(--muted)}
+.starter .badge{align-self:flex-start;font-family:var(--mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;background:var(--accent);color:var(--paper);padding:3px 9px;border-radius:999px}
+.starter .price{font-family:var(--display);font-size:2.6rem;font-weight:800;line-height:1;white-space:nowrap}
+.starter .price small{font-family:var(--body);font-size:1rem;font-weight:500;color:var(--muted)}
 .steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:24px;counter-reset:s}
 .steps li{counter-increment:s;display:flex;flex-direction:column;gap:6px;border-top:2px solid var(--ink);padding-top:14px;min-width:0}
 .steps li::before{content:"Paso " counter(s);font-family:var(--mono);font-size:.78rem;color:var(--accent);text-transform:uppercase;letter-spacing:.06em}
@@ -186,6 +192,14 @@ footer{padding-block:28px;color:var(--muted);font-size:.85rem}
     <div class="sec-head">
       <span class="eyebrow">Precios</span>
       <h2>Un pago único o un precio al mes, tú eliges</h2>
+    </div>
+    <div class="starter">
+      <div class="info">
+        <span class="badge">Para empezar</span>
+        <h3>Tarjeta QR de reseñas</h3>
+        <p>Te diseño una tarjeta para el mostrador con el nombre de tu negocio y un código QR que lleva directo a dejar una reseña en Google. Además, te doy un mensaje listo para enviar a tus clientes por WhatsApp. Lista en 24 horas.</p>
+      </div>
+      <div class="price">25 €<small> pago único</small></div>
     </div>
     <div class="packs">
       <div class="pack">
