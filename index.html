@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Tu negocio en el mapa · Mario Gutiérrez</title>
+<meta name="description" content="Dejo la ficha de Google de tu negocio completa, con fotos, horarios al día y reseñas respondidas. Vélez-Málaga, Torre del Mar y Rincón de la Victoria.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Tu negocio en el mapa · Fichas de Google">
+<meta property="og:description" content="Ficha de Google completa, con fotos, horarios y reseñas respondidas. En 48 horas. Desde 49 €.">
+<meta property="og:locale" content="es_ES">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%230f6b5c' d='M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+:root{box-sizing:border-box}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth}
+body{margin:0;padding:0}
+img{max-width:100%}
+:root{
+  --paper:#eef1ec; --surface:#ffffff; --ink:#18262b; --muted:#56656a; --line:#d5dcd6;
+  --accent:#0f6b5c; --accent-soft:#d9ece6; --star:#e2a21b; --warn:#b5482f; --warn-soft:#f6e3dd; --ok:#2f7d3e;
+  --display:"Bricolage Grotesque", "Avenir Next", system-ui, sans-serif;
+  --body:"Figtree", "Segoe UI", system-ui, sans-serif;
+  --mono:"JetBrains Mono", ui-monospace, Menlo, monospace;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){:root{
+  --paper:#121a1c; --surface:#1b2629; --ink:#e7eeeb; --muted:#9db0ac; --line:#2c3a3d;
+  --accent:#4cc2a8; --accent-soft:#183a35; --star:#f0b93d; --warn:#ef8a70; --warn-soft:#3a2420; --ok:#6cc47c; color-scheme:dark}}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.6;
+  background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);
+  background-size:48px 48px;background-position:-1px -1px}
+.wrap{max-width:1080px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--display);line-height:1.08;text-wrap:balance;margin:0}
+h1{font-size:clamp(2.4rem,6vw,4.2rem);font-weight:800;letter-spacing:-.02em}
+h2{font-size:clamp(1.7rem,3.6vw,2.4rem);font-weight:700;letter-spacing:-.01em}
+h3{font-size:1.2rem;font-weight:700}
+p{margin:0}
+.eyebrow{font-family:var(--mono);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+a{color:var(--accent)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
+header.top{padding-block:20px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.brand{font-family:var(--display);font-weight:700;font-size:1.1rem}
+.brand span{color:var(--accent)}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:var(--paper);font-weight:600;
+  text-decoration:none;padding:12px 20px;border-radius:999px;border:0;font:inherit;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+.btn:hover{filter:brightness(1.08)}
+.hero{display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:center;padding-block:32px 72px}
+.hero-copy{display:flex;flex-direction:column;gap:20px;min-width:0}
+.hero-copy .lead{font-size:1.15rem;color:var(--muted);max-width:34ch}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+.compare{position:relative;display:grid;gap:18px;min-width:0}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:10px;
+  box-shadow:0 10px 30px -18px rgba(0,0,0,.35)}
+.card .tag{align-self:flex-start;font-family:var(--mono);font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;padding:3px 9px;border-radius:999px}
+.card.before{transform:rotate(-1.5deg);opacity:.92}
+.card.before .tag{background:var(--warn-soft);color:var(--warn)}
+.card.after{transform:rotate(1deg) translateX(24px)}
+.card.after .tag{background:var(--accent-soft);color:var(--accent)}
+.biz{font-family:var(--display);font-size:1.25rem;font-weight:700}
+.meta{display:flex;flex-wrap:wrap;gap:6px 12px;font-size:.92rem;color:var(--muted);align-items:center}
+.stars{color:var(--star);letter-spacing:1px}
+.num{font-family:var(--mono);font-variant-numeric:tabular-nums;color:var(--ink)}
+.open{color:var(--ok);font-weight:600}
+.missing{color:var(--warn);font-weight:500}
+.thumbs{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
+.thumbs i{display:block;aspect-ratio:1;border-radius:8px;background:var(--accent-soft);max-width:100%}
+.thumbs i:nth-child(2){background:color-mix(in srgb,var(--star) 30%,var(--surface))}
+.thumbs i:nth-child(3){background:color-mix(in srgb,var(--accent) 35%,var(--surface))}
+.thumbs i:nth-child(4){background:color-mix(in srgb,var(--warn) 22%,var(--surface))}
+.thumbs.empty i{background:repeating-linear-gradient(45deg,var(--line) 0 6px,transparent 6px 12px)}
+.chips{display:flex;gap:6px;flex-wrap:wrap}
+.chips span{font-size:.8rem;border:1px solid var(--line);border-radius:999px;padding:3px 10px}
+.example-note{font-size:.78rem;color:var(--muted);text-align:right}
+section{padding-block:64px}
+.band{background:var(--surface);border-block:1px solid var(--line)}
+.sec-head{display:flex;flex-direction:column;gap:10px;margin-bottom:32px;max-width:640px}
+.sec-head p{color:var(--muted)}
+.checks{display:grid;grid-template-columns:repeat(3,1fr);gap:28px 36px}
+.checks div{display:flex;flex-direction:column;gap:6px;min-width:0}
+.checks h3::before{content:"";display:inline-block;width:10px;height:10px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);
+  background:var(--accent);margin-right:10px;vertical-align:.12em}
+.checks p{color:var(--muted)}
+.packs{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:stretch}
+.pack{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:26px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.pack.featured{border:2px solid var(--accent)}
+.pack .price{font-family:var(--display);font-size:2.6rem;font-weight:800;line-height:1}
+.pack .price small{font-family:var(--body);font-size:1rem;font-weight:500;color:var(--muted)}
+.pack ul{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px}
+.pack .badge{align-self:flex-start;font-family:var(--mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;background:var(--accent);color:var(--paper);padding:3px 9px;border-radius:999px}
+.packs-foot{margin-top:20px;color:var(--muted)}
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:24px;counter-reset:s}
+.steps li{counter-increment:s;display:flex;flex-direction:column;gap:6px;border-top:2px solid var(--ink);padding-top:14px;min-width:0}
+.steps li::before{content:"Paso " counter(s);font-family:var(--mono);font-size:.78rem;color:var(--accent);text-transform:uppercase;letter-spacing:.06em}
+.steps p{color:var(--muted)}
+.faq{display:grid;grid-template-columns:repeat(2,1fr);gap:24px 40px}
+.faq div{display:flex;flex-direction:column;gap:6px;min-width:0}
+.faq p{color:var(--muted)}
+.contact{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center}
+.contact-box{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:24px;display:flex;flex-direction:column;gap:16px}
+.line{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.line .label{font-family:var(--mono);font-size:.75rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.line .val{font-family:var(--mono);font-size:1rem;user-select:all;word-break:break-all}
+.copy{background:transparent;border:1px solid var(--line);color:var(--ink);border-radius:8px;padding:6px 12px;font:inherit;font-size:.85rem;cursor:pointer}
+footer{padding-block:28px;color:var(--muted);font-size:.85rem}
+@media (max-width:860px){
+  .hero,.contact{grid-template-columns:1fr}
+  .checks,.packs{grid-template-columns:1fr 1fr}
+  .steps{grid-template-columns:1fr 1fr}
+  .card.after{transform:rotate(1deg) translateX(10px)}
+}
+@media (max-width:560px){
+  .checks,.packs,.steps,.faq{grid-template-columns:1fr}
+  .card.before,.card.after{transform:none}
+}
+@media (prefers-reduced-motion:no-preference){
+  .card.after{transition:transform .3s ease}
+  .card.after:hover{transform:rotate(0) translateX(24px) translateY(-4px)}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="brand">Mario Gutiérrez <span>· fichas de Google</span></div>
+    <a class="btn ghost" href="https://wa.me/34652090533" target="_blank" rel="noopener">Escríbeme por WhatsApp</a>
+  </header>
+
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="eyebrow">Vélez-Málaga · Torre del Mar · Rincón de la Victoria</span>
+      <h1>Que te encuentren en el mapa, no a tu competencia.</h1>
+      <p class="lead">Dejo la ficha de Google de tu negocio completa, con fotos, horarios al día y reseñas respondidas. En 48 horas y sin que tengas que tocar nada.</p>
+      <div class="hero-actions">
+        <a class="btn" href="https://wa.me/34652090533?text=Hola%20Mario%2C%20me%20interesa%20mejorar%20la%20ficha%20de%20Google%20de%20mi%20negocio" target="_blank" rel="noopener">Pide una revisión gratis</a>
+        <a class="btn ghost" href="#precios">Ver precios</a>
+      </div>
+    </div>
+
+    <div class="compare" aria-label="Ejemplo de ficha antes y después">
+      <div class="card before">
+        <span class="tag">Antes</span>
+        <div class="biz">Barbería del Paseo</div>
+        <div class="meta"><span class="stars">★★★☆☆</span><span class="num">3,9</span><span>(12)</span><span>· Barbería</span></div>
+        <div class="meta"><span class="missing">Horario no disponible</span><span>· Sin web</span></div>
+        <div class="thumbs empty"><i></i><i></i><i></i><i></i></div>
+        <div class="meta"><span class="missing">7 reseñas sin respuesta</span></div>
+      </div>
+      <div class="card after">
+        <span class="tag">Después</span>
+        <div class="biz">Barbería del Paseo</div>
+        <div class="meta"><span class="stars">★★★★★</span><span class="num">4,8</span><span>(63)</span><span>· Barbería en Vélez-Málaga</span></div>
+        <div class="meta"><span class="open">Abierto</span><span>· Cierra a las 20:30</span><span>· Web y WhatsApp</span></div>
+        <div class="thumbs"><i></i><i></i><i></i><i></i></div>
+        <div class="chips"><span>Corte 12 €</span><span>Barba 8 €</span><span>Pago con tarjeta</span><span>Cita previa</span></div>
+      </div>
+      <p class="example-note">Negocio de ejemplo</p>
+    </div>
+  </div>
+</div>
+
+<section class="band">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Qué hago en tu ficha</span>
+      <h2>Todo lo que mira un cliente antes de elegirte</h2>
+      <p>Cuando alguien busca "peluquería cerca" o "taller en Vélez", Google enseña primero las fichas más completas y mejor valoradas.</p>
+    </div>
+    <div class="checks">
+      <div><h3>Datos correctos</h3><p>Nombre, categoría, dirección, teléfono, web y horarios, festivos incluidos.</p></div>
+      <div><h3>Fotos que venden</h3><p>Fachada, interior, productos y equipo. Diez fotos como mínimo, bien elegidas.</p></div>
+      <div><h3>Descripción con tu zona</h3><p>Texto pensado para que salgas cuando buscan tu servicio en tu localidad.</p></div>
+      <div><h3>Servicios y precios</h3><p>Tu carta o tus servicios a la vista, para que el cliente llegue sabiendo lo que quiere.</p></div>
+      <div><h3>Reseñas respondidas</h3><p>Contesto las pendientes y te dejo plantillas para las siguientes.</p></div>
+      <div><h3>QR de reseñas</h3><p>Un código para el mostrador para que tus clientes reales te valoren en un momento.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="precios">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Precios</span>
+      <h2>Un pago único o un precio al mes, tú eliges</h2>
+    </div>
+    <div class="packs">
+      <div class="pack">
+        <h3>Básico</h3>
+        <div class="price">49 €<small> pago único</small></div>
+        <ul><li>Datos y horarios corregidos</li><li>Descripción optimizada</li><li>10 fotos subidas</li><li>QR de reseñas</li></ul>
+      </div>
+      <div class="pack featured">
+        <span class="badge">El más pedido</span>
+        <h3>Completo</h3>
+        <div class="price">99 €<small> pago único</small></div>
+        <ul><li>Todo lo del Básico</li><li>Servicios y productos con precios</li><li>Todas las reseñas respondidas</li><li>3 publicaciones de novedades</li><li>Plantillas de respuesta para ti</li></ul>
+      </div>
+      <div class="pack">
+        <h3>Mantenimiento</h3>
+        <div class="price">25 €<small> al mes</small></div>
+        <ul><li>Una publicación por semana</li><li>Fotos nuevas</li><li>Reseñas respondidas</li><li>Horarios de festivos al día</li><li>Informe mensual de visitas y llamadas</li></ul>
+      </div>
+    </div>
+    <p class="packs-foot">Si me encargas tu página web, la ficha de Google va incluida. Pago por Bizum o transferencia: la mitad al empezar y la otra mitad al terminar.</p>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Cómo funciona</span>
+      <h2>Lista en 48 horas</h2>
+    </div>
+    <ol class="steps">
+      <li><h3>Revisión gratis</h3><p>Miro tu ficha y te digo por WhatsApp las 3 cosas que más clientes te harían ganar.</p></li>
+      <li><h3>Me das acceso</h3><p>Me añades como administrador. La ficha sigue siendo tuya en todo momento.</p></li>
+      <li><h3>Me pasas el material</h3><p>Fotos del local, horarios y servicios con precios. Con el móvil basta.</p></li>
+      <li><h3>Te la entrego</h3><p>Te envío capturas de antes y después para que veas el cambio.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Preguntas</span>
+      <h2>Lo que suelen preguntarme</h2>
+    </div>
+    <div class="faq">
+      <div><h3>¿Pierdo el control de mi ficha?</h3><p>No. Tú eres el propietario y me puedes quitar el acceso cuando quieras.</p></div>
+      <div><h3>¿Pones reseñas falsas?</h3><p>Nunca. Google las borra y puede penalizar la ficha. Te ayudo a que tus clientes reales opinen.</p></div>
+      <div><h3>¿Tengo que estar presente?</h3><p>No. Todo se hace en remoto; solo necesito tus fotos y datos por WhatsApp.</p></div>
+      <div><h3>¿Atiendes en inglés?</h3><p>Sí. También respondo reseñas de clientes extranjeros en inglés.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap contact">
+    <div class="sec-head" style="margin-bottom:0">
+      <span class="eyebrow">Contacto</span>
+      <h2>Pide tu revisión gratis</h2>
+      <p>Mándame el nombre de tu negocio y en el día te digo qué le falta a tu ficha. Sin compromiso.</p>
+      <div><a class="btn" href="https://wa.me/34652090533?text=Hola%20Mario%2C%20me%20interesa%20mejorar%20la%20ficha%20de%20Google%20de%20mi%20negocio" target="_blank" rel="noopener">Abrir WhatsApp</a></div>
+    </div>
+    <div class="contact-box">
+      <div class="line"><div><div class="label">WhatsApp</div><div class="val" id="tel">652 09 05 33</div></div><button class="copy" data-target="tel">Copiar</button></div>
+      <div class="line"><div><div class="label">Correo</div><div class="val" id="mail">mariogutierrezespinosa8@gmail.com</div></div><button class="copy" data-target="mail">Copiar</button></div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap"><footer>Mario Gutiérrez Espinosa · Fichas de Google y páginas web para negocios de la Axarquía</footer></div>
+
+<script>
+document.querySelectorAll('.copy').forEach(function(b){
+  b.addEventListener('click',function(){
+    var el=document.getElementById(b.dataset.target), t=el.textContent.trim();
+    function done(){b.textContent='Copiado';setTimeout(function(){b.textContent='Copiar'},1600)}
+    function fallback(){var r=document.createRange();r.selectNodeContents(el);var s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='Seleccionado'}
+    try{navigator.clipboard.writeText(t).then(done,fallback)}catch(e){fallback()}
+  });
+});
+</script>
+</body>
+</html>
